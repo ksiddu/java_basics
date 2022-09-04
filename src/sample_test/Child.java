@@ -22,6 +22,8 @@ public class Child extends Parent {
 		Child child = new Child(20);
 		child.printValue();
 		
+		//System.out.println("Access value of parent x : "+ super.x);
+		
 		
 	}
 	
