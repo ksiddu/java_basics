@@ -1,0 +1,176 @@
+Polymorphism and Inheritance
+
+
+
+Public class A{
+
+void func() { ... }
+void func(int a) { ... }
+float func(double a) { ... }
+
+
+float func(float a, int b) { ... }
+
+
+float func(int a, int b) { ... }
+
+float func(int a, float b) { ... }
+}
+
+
+
+Public static void main(String[] args){
+
+A obj = new A();
+
+// before executing the program, complier will link these methods calls to method definitions
+obj.func();
+obj.func(1);
+obj.func(1, 2, 3);
+
+}
+
+
+Compile time polymorphism[ Single Java Class] : Same java class having two or more methods with the same name but differ in the parameters
+
+With Method overloading
+
+class Sum{
+
+Public int addNumbers(int a, int b);
+
+Public int addNumbers(int a, int b, int c);
+
+Public int addNumbers(int a, int b, int c, int d);
+
+
+}
+
+
+Public static void main(String[] args){
+
+Sum obj = Sum A();
+
+// before executing the program, complier will link these methods calls to method definitions
+obj.addNumbers(1, 2);
+obj.addNumbers(1,2, 3);
+obj.addNumbers(1, 2, 3, 4);
+
+}
+
+
+Without Method overloading
+
+class Sum{
+
+Public int addTwoNumbers(int a, int b);
+
+Public int addThreeNumbers(int a, int b, int c);
+
+Public int addFourNumbers(int a, int b, int c, int d);
+
+
+}
+
+
+// method overriding
+Run time polymorphism[ Inheritance Java Class] : Both Parent and child class have the same method, but which method to call is identified at the run time.
+
+
+Class Animal{ // parent class
+
+Public void eat(){
+
+sop(“I can eat food ”);
+
+}
+
+Public void display(){
+
+sop(“I am displaying ”);
+
+}
+
+}
+
+Class Dog extends Animal{ // child class
+
+@override// annotation
+Public void eat(){
+
+sop(“I can eat dog food”);
+
+}
+
+}
+
+
+Class Main{
+Public static void main(String[] args){
+
+Animal obj1 = new Animal(); // parent object 
+
+Dog obj2 = new Dog(); // child object 
+
+
+// at run rime, java will identify the object reference and call the respective method
+obj1.eat(); // I can eat food 
+obj2. eat();// I can eat dog food
+
+obj1.display();
+obj2.display();
+
+
+}
+}
+
+
+Animal - common methods to put it in the parent class
+Dog - write child specific methods in the child class
+Cat - write child specific methods in the child class
+Ant - write child specific methods in the child class
+
+Without Inheritance 
+
+Common methods - 10
+Specifice method -1 
+
+Dog - 11 methods
+
+Cat  - 11 methods
+
+Ant - 11 methods
+
+————
+
+33 methods
+
+
+With Inheritance 
+
+Common methods - 10
+Specifice method -1 
+
+Animal - 10 common methods
+
+Dog - 1 method
+
+Cat  - 1 method
+
+Ant - 1 method
+
+————————————
+
+13 methods
+
+
+
+Polymorphism 
+
+— It is one of the oops concept
+— Many forms
+— Types: Runtime and Compile time 
+— Examples for Compile Polymorphism : method overloading
+— Examples for Runtime Polymorphism : method overriding
+— method overloading definition
+— method overriding definition
