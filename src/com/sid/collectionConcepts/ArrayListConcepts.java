@@ -29,7 +29,8 @@ public class ArrayListConcepts {
 		// 2. contains duplicate elements
 		// 3. random access using the index of the elements
 		// 4. used dynamic array to store the elements
-		// 5. manipulation is slow since shifting is required [whenever we delete or insert an element]
+		// 5. manipulation is slow since shifting is required [whenever we delete or
+		// insert an element]
 		// 6. non-synchronized (not thread safe)
 
 		List<Integer> list1 = new ArrayList<>();
@@ -51,7 +52,7 @@ public class ArrayListConcepts {
 		System.out.println("List print: " + list1);
 
 		// Iterating ways: for, for-each, iterator
-		
+
 		// for loop
 		System.out.println("==================================");
 		System.out.println("for loop traversing / iterating");
@@ -114,9 +115,9 @@ public class ArrayListConcepts {
 		System.out.println("================================");
 		System.out.println("ArrayList elements after sort: " + list3);
 		System.out.println("================================");
-		
+
 		Collections.sort(list3, Collections.reverseOrder());
-		
+
 		System.out.println("================================");
 		System.out.println("ArrayList elements after descending sort: " + list3);
 		System.out.println("================================");
