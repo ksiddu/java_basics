@@ -8,8 +8,8 @@ public class MapConcepts {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        // https://mkyong.com/java8/java-8-foreach-examples/
-		
+		// https://mkyong.com/java8/java-8-foreach-examples/
+
 		Map<String, Integer> map = new HashMap<>();
 		map.put("Siddu", 1);
 		map.put("Ravi", 2);
@@ -33,9 +33,10 @@ public class MapConcepts {
 			System.out.println("Map Key: " + key);
 			System.out.println("Map Value: " + map.get(key));
 		}
-		
+
 		// 3. using forEach
-		map.forEach((k,v)->System.out.println("key: "+ k + " value: "+ v));
+		map.forEach((k, v) -> System.out.println("key: " + k + " value: " + v));
+
 	}
 
 }

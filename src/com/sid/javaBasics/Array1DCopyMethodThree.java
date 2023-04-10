@@ -15,6 +15,8 @@ public class Array1DCopyMethodThree {
 		int[] destArray = Arrays.copyOfRange(array, 0, length);
 		
 		System.out.println(Arrays.toString(destArray));
+		
+		
 
 	}
 

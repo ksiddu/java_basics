@@ -16,10 +16,10 @@ public class SetConcepts {
 		// 2. cannot contains the duplicate elements
 		// 3. not maintains the insertion order
 		// 4. cannot random access using the index of the elements
-		// 5. TBD
-		// 6. non-synchronized (not thread safe)
-		// 7. HashSet, LinkedHashSet, SortedSet(TreeSet)
-		// 8. LinkedHashSet: maintains the insertion order
+		// 5. non-synchronized (not thread safe)
+		// 6. HashSet, LinkedHashSet, SortedSet(TreeSet)
+		// 7. LinkedHashSet: maintains the insertion order
+		// 8. TreeSet can contain even null element
 
 		Set<String> set1 = new HashSet<>();
 
@@ -29,6 +29,8 @@ public class SetConcepts {
 		set1.add("Rahul");
 		set1.add("Siddu");
 		set1.add("Vinayak");
+		set1.add(null);
+		set1.add(null);
 		set1.add(null);
 
 		System.out.println("Elements of a set: " + set1);
@@ -41,6 +43,7 @@ public class SetConcepts {
 			System.out.println("HashSet Element: " + ite.next());
 		}
 
+		// LinkedHashSet features
 		// 1. maintains insertion order
 
 		Set<String> set2 = new LinkedHashSet<>();
@@ -72,8 +75,7 @@ public class SetConcepts {
 		set3.add("Ajay");
 
 		System.out.println("Elements of a TreeSet: " + set3);
-		
-		
+
 		Set<Integer> set4 = new TreeSet<Integer>();
 		set4.add(100);
 		set4.add(87);
@@ -81,11 +83,9 @@ public class SetConcepts {
 		set4.add(87);
 		set4.add(2);
 		set4.add(5);
-		//set4.add(null);
-		
+		// set4.add(null);
+
 		System.out.println("Elements of a TreeSet: " + set4);
-		
-        
 
 	}
 
